@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Papeador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+    .backg {
+        background-color: #0a2463 !important;
+        /* azul oscuro */
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .profile-card {
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 30px auto;
+        max-width: 600px;
+    }
+
+    .profile-info {
+        margin-bottom: 20px;
+    }
+
+    .profile-label {
+        font-weight: 600;
+        color: #555;
+        margin-bottom: 5px;
+    }
+
+    .profile-value {
+        font-size: 18px;
+        color: #333;
+        padding: 10px;
+        background: #f8f9fa;
+        border-radius: 4px;
+    }
+
+    table {
+        width: 90%;
+        margin: 0 auto 30px;
+        background: white;
+        border-collapse: collapse;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    }
+
+    th,
+    td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+    th {
+        background: #eaeaea;
+    }
+
+    .btn-entregas {
+        background: #0d6efd;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 16px;
+        transition: background 0.2s ease-in-out;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-entregas:hover {
+        background: #206cde;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg backg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Papeador</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./listado_concursos.html">Concuros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./perfil.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="profile-card">
+            <h2 class="text-center">Mi Perfil</h2>
+
+            <div class="profile-info">
+                <div class="profile-label">Nombre de Usuario</div>
+                <div class="profile-value" id="username">usuario123</div>
+            </div>
+
+            <div class="profile-info">
+                <div class="profile-label">Correo Electrónico</div>
+                <div class="profile-value" id="email">usuario@ejemplo.com</div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="./entrega.html" class="btn-entregas">Ver Mis Entregas</a>
+            </div>
+        </div>
+
+        <h2 class="text-center">Standing en Concursos</h2>
+
+        <table>
+            <tr>
+                <th>Nombre del Concurso</th>
+                <th>Lugar</th>
+            </tr>
+
+            <tr>
+                <td>Educational Codeforces Round 185</td>
+                <td>15°</td>
+            </tr>
+
+            <tr>
+                <td>Codeforces Round Div. 2</td>
+                <td>42°</td>
+            </tr>
+
+            <tr>
+                <td>ICPC Regional 2025</td>
+                <td>8°</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
